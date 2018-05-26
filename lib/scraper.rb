@@ -55,8 +55,6 @@ class Scraper
       link_counter = 0
 
       while link_counter < links_holder.length
-
-
         if assign[link_counter].include?("twitter")
           twitter = assign
         elsif assign[link_counter].include?("linkedin")
@@ -67,6 +65,7 @@ class Scraper
           blog = assign
         end
         link_counter += 1
+      end
 
       binding.pry
 
