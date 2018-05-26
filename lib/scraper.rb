@@ -50,6 +50,8 @@ class Scraper
       links_holder << link['href']
     end
 
+    binding.pry
+
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
     clean_hash = student_hash.delete_if {|k, v| v == nil}
     clean_hash
