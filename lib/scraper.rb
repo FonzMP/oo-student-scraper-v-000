@@ -74,10 +74,10 @@ class Scraper
         github = nil
       end
 
-      if assign.include?("linkedin")
-        linked_in = assign
+      if assign.include?("blog")
+        blog = assign
       else
-        linked_in = nil
+        blog = nil
       end
 
     end
