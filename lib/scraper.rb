@@ -50,6 +50,8 @@ class Scraper
       links_holder << link['href']
     end
 
+    twitter = ""
+
     links_holder.select {|item| twitter = item.include?("twitter")}
 
     binding.pry
