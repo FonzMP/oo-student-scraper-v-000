@@ -51,7 +51,10 @@ class Scraper
     end
 
     while counter < links_holder.length
-
+      if links_holder[counter].include? ("twitter")
+        twitter = links_holder[counter]
+      end
+      counter += 1
     end
 
     binding.pry
