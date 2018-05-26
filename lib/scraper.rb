@@ -53,7 +53,7 @@ class Scraper
     twitter = links_holder.select {|item| item.include?("twitter")}
     linkedin = links_holder.select {|item| item.include?("linkedin")}
     github = links_holder.select {|item| item.include?("github")}
-    twitter = links_holder.select {|item| item.include?("twitter")}
+    blog = links_holder.select {|item| item.include?("twitter")}
 
     binding.pry
 
