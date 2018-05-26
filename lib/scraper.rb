@@ -54,7 +54,7 @@ class Scraper
 
       link_counter = 0
 
-      while counter < links_holder.length
+      while link_counter < links_holder.length
 
 
         if assign.include?("twitter")
