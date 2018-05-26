@@ -13,6 +13,7 @@ class Scraper
 
     doc.css(".student-location").collect do |item|
       holder_two << {:location => item.text}
+    end
     binding.pry
   end
 
