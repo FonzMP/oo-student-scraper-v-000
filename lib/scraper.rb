@@ -47,7 +47,7 @@ class Scraper
 
     # twitter url
     doc.css(".social-icon-container a").collect do |item|
-      twitters << item.text
+      twitters << item['href']
     end
 
     #linkedin url
