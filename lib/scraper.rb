@@ -49,7 +49,8 @@ class Scraper
 
     links = doc.css(".social-icon-container a")
     links.each do |link|
-      link['href']
+      puts link['href']
+    end
 
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
