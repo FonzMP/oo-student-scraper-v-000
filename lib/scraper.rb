@@ -48,6 +48,7 @@ class Scraper
     # bio = doc.css("div.description-holder p").text
 
     links = doc.css(".social-icon-container a")
+    binding.pry
 
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
