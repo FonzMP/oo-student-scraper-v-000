@@ -20,7 +20,7 @@ class Scraper
 
     binding.pry
     doc.css("div.student-card a").collect do |item|
-      holder_three << {:profile_url => item[href]}
+      holder_three << {:profile_url => item['href']}
     end
 
   end
