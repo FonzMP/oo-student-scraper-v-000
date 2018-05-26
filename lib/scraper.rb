@@ -52,6 +52,7 @@ class Scraper
 
     twitter = links_holder.select {|item| item.include?("twitter")}
     links_holder.delete(twitter)
+    binding.pry
     linkedin = links_holder.select {|item| item.include?("linkedin")}
     github = links_holder.select {|item| item.include?("github")}
     blog = links_holder.select {|item| item.exclude?("twitter", "linkedin", "github")}
