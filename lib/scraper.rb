@@ -47,6 +47,9 @@ class Scraper
     # profile_quote = doc.css(".profile-quote").text
     # bio = doc.css("div.description-holder p").text
 
+    links = doc.css(".social-icon-container a")
+
+
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
     clean_hash = student_hash.delete_if {|k, v| v == nil}
     clean_hash
