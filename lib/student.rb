@@ -11,9 +11,8 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    holder = []
     students_array.each do |student|
-      holder << student[:profile_url]
+
     end
     binding.pry
   end
