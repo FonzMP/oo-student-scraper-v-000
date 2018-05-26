@@ -52,6 +52,8 @@ class Scraper
 
     links_holder.map do |assign|
 
+      while counter < links_holder.length
+
       if assign.include?("twitter")
         twitter = assign
       elsif assign.include?("linkedin")
