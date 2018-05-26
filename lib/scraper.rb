@@ -49,7 +49,7 @@ class Scraper
     bio = doc.css("div.description-holder p").text
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
-    student_hash.delete_if {|k, v| v == nil}
+    clean_hash = student_hash.delete_if {|k, v| v == nil}
 
   end
 
