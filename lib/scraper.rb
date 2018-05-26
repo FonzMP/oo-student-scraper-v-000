@@ -51,6 +51,7 @@ class Scraper
     github = doc.css(".social-icon-container a")[2]['href']
     blog = "http://flatironschool.com"
     profile_quote = doc.css(".profile-quote").text
+    bio = doc.css("div.description-holder p").text
 
     binding.pry
     #linkedin url
