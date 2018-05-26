@@ -51,7 +51,7 @@ class Scraper
     end
 
     twitter = links_holder.select {|item| item.include?("twitter")}
-    linkedin = links_holder.select {|item| item.include?("twitter")}
+    linkedin = links_holder.select {|item| item.include?("linkedin")}
     twitter = links_holder.select {|item| item.include?("twitter")}
     twitter = links_holder.select {|item| item.include?("twitter")}
 
