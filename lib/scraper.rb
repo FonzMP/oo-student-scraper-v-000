@@ -51,7 +51,7 @@ class Scraper
     end
 
     twitter = links_holder.select {|item| item.include?("twitter")}
-    links_twitter = links_holder.delete(twitter[0])
+    links_holder.delete(twitter[0])
     binding.pry
     linkedin = links_holder.select {|item| item.include?("linkedin")}
     github = links_holder.select {|item| item.include?("github")}
