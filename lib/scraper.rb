@@ -14,11 +14,11 @@ class Scraper
     end
 
     doc.css(".student-location").collect do |item|
-      holder_two << {:location => item.text}
+      holder_two << item.text
     end
 
     doc.css("div.student-card a").collect do |item|
-      holder_three << {:profile_url => item['href']}
+      holder_three << item['href']
     end
     binding.pry
 
