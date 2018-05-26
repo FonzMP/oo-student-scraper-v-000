@@ -40,11 +40,6 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open("#{profile_url}"))
 
-    twitters = []
-    holder_two = []
-    holder_three = []
-    students = []
-
     # twitter url
     twitter = doc.css(".social-icon-container a")[0]['href']
     linkedin = doc.css(".social-icon-container a")[1]['href']
