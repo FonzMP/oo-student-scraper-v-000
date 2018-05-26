@@ -22,7 +22,7 @@ class Student
     self.github = attributes_hash[:github]
     self.blog = attributes_hash[:blog]
     self.profile_quote = attributes_hash[:profile_quote]
-    self.twitter = attributes_hash[:twitter]
+    self.bio = attributes_hash[:bio]
   end
 
   def self.all
