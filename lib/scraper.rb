@@ -50,17 +50,36 @@ class Scraper
       holder << item.text
     end
 
-    #student location
+    #linkedin url
     doc.css(".student-location").collect do |item|
       holder_two << item.text
     end
 
-    #student URL
+    #github url
     doc.css("div.student-card a").collect do |item|
       holder_three << item['href']
     end
 
-    #create hash and push to array for return
+    #blog url
+    counter = 0
+    while counter < holder.length
+      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
+      counter += 1
+    end
+
+    #profile quote
+    counter = 0
+    while counter < holder.length
+      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
+      counter += 1
+    end
+    #blog url
+    counter = 0
+    while counter < holder.length
+      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
+      counter += 1
+    end
+    #blog url
     counter = 0
     while counter < holder.length
       students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
