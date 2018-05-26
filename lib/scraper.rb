@@ -49,7 +49,7 @@ class Scraper
 
     links = doc.css(".social-icon-container a")
     links.each do |link|
-      puts link['href']
+      links_holder << link['href']
     end
 
 
