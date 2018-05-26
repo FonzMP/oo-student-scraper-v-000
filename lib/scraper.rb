@@ -40,12 +40,8 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open("#{profile_url}"))
 
-    # twitter = doc.css(".social-icon-container a")[0]['href'] #this will change if they're missing one!
-    # linkedin = doc.css(".social-icon-container a")[1]['href']
-    # github = doc.css(".social-icon-container a")[2]['href']
-    # blog = doc.css(".social-icon-container a")[3]['href']
-    # profile_quote = doc.css(".profile-quote").text
-    # bio = doc.css("div.description-holder p").text
+    profile_quote = doc.css(".profile-quote").text
+    bio = doc.css("div.description-holder p").text
 
     links_holder = []
 
