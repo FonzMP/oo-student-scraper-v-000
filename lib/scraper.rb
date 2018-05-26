@@ -55,15 +55,31 @@ class Scraper
     end
 
     links_holder.each do |assign|
+
       if assign.include?("twitter")
         twitter = assign
       else
         twitter = nil
       end
+
       if assign.include?("linkedin")
         linked_in = assign
       else
         linked_in = nil
+      end
+
+      if assign.include?("github")
+        github = assign
+      else
+        github = nil
+      end
+
+      if assign.include?("linkedin")
+        linked_in = assign
+      else
+        linked_in = nil
+      end
+
     end
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
