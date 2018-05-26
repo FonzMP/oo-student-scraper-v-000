@@ -50,27 +50,6 @@ class Scraper
       links_holder << link['href']
     end
 
-    links_holder.map do |assign|
-
-      link_counter = 0
-
-      while link_counter < links_holder.length
-        if assign[link_counter].include?("twitter")
-          twitter = assign
-        elsif assign[link_counter].include?("linkedin")
-          linked_in = assign
-        elsif assign[link_counter].include?("github")
-          github = assign
-        elsif assign[link_counter].include?("blog")
-          blog = assign
-        end
-        link_counter += 1
-      end
-
-      binding.pry
-
-    end
-
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
     clean_hash = student_hash.delete_if {|k, v| v == nil}
     clean_hash
