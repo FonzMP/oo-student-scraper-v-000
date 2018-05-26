@@ -61,26 +61,21 @@ class Scraper
     end
 
     #blog url
-    counter = 0
-    while counter < holder.length
-      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
-      counter += 1
+    doc.css("div.student-card a").collect do |item|
+      holder_three << item['href']
     end
 
     #profile quote
-    counter = 0
-    while counter < holder.length
-      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
-      counter += 1
+    doc.css("div.student-card a").collect do |item|
+      holder_three << item['href']
     end
 
     #bio
-    counter = 0
-    while counter < holder.length
-      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
-      counter += 1
+    doc.css("div.student-card a").collect do |item|
+      holder_three << item['href']
     end
-    #blog url
+
+    #mcreate hash and push to array for return
     counter = 0
     while counter < holder.length
       students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
