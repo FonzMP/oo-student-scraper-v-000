@@ -47,7 +47,7 @@ class Scraper
 
     # twitter url
     doc.css(".social-icon-container a").collect do |item|
-      twitters << item['href'] if item['href'].include? ("twitter")
+      twitter = item['href'] if item['href'].include? ("twitter")
       binding.pry
     end
 
