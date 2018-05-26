@@ -26,8 +26,9 @@ class Scraper
       holder_three << item['href']
     end
 
-  end
+    while counter < holder.length
 
+  end
 
   def self.scrape_profile_page(profile_url)
 
