@@ -50,15 +50,7 @@ class Scraper
       links_holder << link['href']
     end
 
-    counter = 0
-
-    while counter < links_holder.length
-      binding.pry
-      if links_holder[counter].include? ("twitter")
-        twitter = links_holder[counter]
-      end
-      counter += 1
-    end
+    links_holder.select {|item| item.include?("twitter")}
 
 
 
