@@ -10,7 +10,7 @@ class Scraper
     holder_two = []
     holder_three = []
     doc.css(".student-name").collect do |item|
-      holder << {:name => item.text}
+      holder << item.text
     end
 
     doc.css(".student-location").collect do |item|
