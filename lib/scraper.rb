@@ -43,7 +43,7 @@ class Scraper
     # twitter url
     twitter = doc.css(".social-icon-container a")[0]['href']
     linkedin = doc.css(".social-icon-container a")[1]['href']
-    github = doc.css(".social-icon-container a")[2]['href']
+    github = doc.css(".social-icon-container a")[2]['href'] if doc.css(".social-icon-container a")[2]['href'] != nil
     blog = doc.css(".social-icon-container a")[3]['href']
     profile_quote = doc.css(".profile-quote").text
     bio = doc.css("div.description-holder p").text
