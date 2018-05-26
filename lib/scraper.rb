@@ -7,6 +7,7 @@ class Scraper
   def self.scrape_index_page(index_url)
     doc = Nokogiri::HTML(open("./fixtures/student-site/index.html"))
     holder = []
+    holder_two = []
     doc.css(".student-name").collect do |item|
       holder << {:name => item.text}
     end
