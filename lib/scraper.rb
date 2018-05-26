@@ -46,7 +46,7 @@ class Scraper
     students = []
 
     # twitter url
-    doc.css(".social-icon-container a")[0].collect do |item|
+    doc.css(".social-icon-container a")[0]['href'].collect do |item|
       twitter = item['href']
     end
     binding.pry
