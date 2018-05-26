@@ -50,7 +50,7 @@ class Scraper
       links_holder << link['href']
     end
 
-    counter = -
+    counter = 0
 
     while counter < links_holder.length
       binding.pry
