@@ -57,7 +57,6 @@ class Scraper
     github = links_holder.select {|item| item.include?("github")}
     links_holder.delete(github[0])
     blog = links_holder[0]
-    binding.pry
 
     student_hash = {:twitter => twitter[0], :linkedin => linkedin[0], :github => github[0], :blog => blog, :profile_quote => profile_quote, :bio => bio}
     clean_hash = student_hash.delete_if {|k, v| v == nil}
