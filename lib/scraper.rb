@@ -60,6 +60,7 @@ class Scraper
       else
         twitter = nil
       end
+      binding.pry
     end
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
