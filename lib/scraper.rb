@@ -26,6 +26,7 @@ class Scraper
       holder_three << item['href']
     end
 
+    counter = 0
     while counter < holder.length
 
   end
