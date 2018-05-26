@@ -21,6 +21,7 @@ class Scraper
       holder_two << item.text
     end
 
+    #student ULR
     doc.css("div.student-card a").collect do |item|
       holder_three << item['href']
     end
