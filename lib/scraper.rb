@@ -50,7 +50,7 @@ class Scraper
     linkedin = doc.css(".social-icon-container a")[1]['href']
     github = doc.css(".social-icon-container a")[2]['href']
     blog = "http://flatironschool.com"
-    profile_quote = 
+    profile_quote = doc.css(".profile-quote").text
 
     binding.pry
     #linkedin url
