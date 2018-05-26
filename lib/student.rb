@@ -15,6 +15,7 @@ class Student
     students_array.each do |student|
       holder << student[:profile_url]
     end
+    binding.pry
   end
 
   def add_student_attributes(attributes_hash)
