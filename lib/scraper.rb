@@ -10,6 +10,8 @@ class Scraper
     holder_two = []
     holder_three = []
     students = []
+
+    # student name
     doc.css(".student-name").collect do |item|
       holder << item.text
     end
@@ -21,6 +23,8 @@ class Scraper
     doc.css("div.student-card a").collect do |item|
       holder_three << item['href']
     end
+
+
     binding.pry
 
   end
