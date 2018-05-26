@@ -47,7 +47,7 @@ class Scraper
 
     # twitter url
     doc.css(".student-name").collect do |item|
-      holder << item.text
+      twitters << item.text
     end
 
     #linkedin url
