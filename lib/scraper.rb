@@ -18,7 +18,7 @@ class Scraper
     end
 
     doc.css(".student-card").css("a").collect do |item|
-      holder_three << {:profile_url => item.text}
+      holder_three << {:profile_url => item.value}
     end
     binding.pry
   end
