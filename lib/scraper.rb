@@ -45,7 +45,7 @@ class Scraper
     holder_three = []
     students = []
 
-    # student name
+    # twitter url
     doc.css(".student-name").collect do |item|
       holder << item.text
     end
