@@ -20,7 +20,7 @@ class Student
     self.twitter = attributes_hash[:twitter]
     self.linkedin = attributes_hash[:linkedin]
     self.github = attributes_hash[:github]
-    self.twitter = attributes_hash[:twitter]
+    self.blog = attributes_hash[:blog]
     self.twitter = attributes_hash[:twitter]
     self.twitter = attributes_hash[:twitter]
   end
