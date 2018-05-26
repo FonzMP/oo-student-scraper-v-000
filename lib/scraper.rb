@@ -28,6 +28,8 @@ class Scraper
 
     counter = 0
     while counter < holder.length
+      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
+      counter += 1
 
   end
 
