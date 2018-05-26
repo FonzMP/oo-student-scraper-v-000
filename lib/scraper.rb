@@ -18,7 +18,7 @@ class Scraper
     end
 
     # doc.css("div.student-card a").css("a").collect do |item|
-    #   holder_three << {:profile_url => item.text}
+    #   holder_three << {:profile_url => item[href]}
     # end
     binding.pry
   end
