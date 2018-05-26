@@ -53,6 +53,7 @@ class Scraper
     #linkedin url
     doc.css(".social-icon-container a").collect do |item|
       linkedin = item['href'] if item['href'].include? ("linkedin")
+      binding.pry
     end
 
     #github url
