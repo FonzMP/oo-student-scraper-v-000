@@ -58,12 +58,8 @@ class Scraper
         linked_in = assign
       elsif assign.include?("github")
         github = assign
-      end
-
-      if assign.include?("blog")
+      elisif assign.include?("blog")
         blog = assign
-      else
-        blog = nil
       end
 
       binding.pry
