@@ -26,6 +26,7 @@ class Scraper
       holder_three << item['href']
     end
 
+    #create hash and push to array for return
     counter = 0
     while counter < holder.length
       students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
@@ -33,6 +34,7 @@ class Scraper
     end
 
     students
+
   end
 
   def self.scrape_profile_page(profile_url)
