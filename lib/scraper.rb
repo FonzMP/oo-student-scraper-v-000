@@ -46,7 +46,7 @@ class Scraper
     students = []
 
     # twitter url
-    doc.css(".social-icon-container a").collect do |item|
+    doc.css(".social-icon-container a")[0].collect do |item|
       twitter = item['href'] if item['href'].include? ("twitter")
     end
 
