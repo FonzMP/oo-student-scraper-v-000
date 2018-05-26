@@ -40,13 +40,12 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open("#{profile_url}"))
 
-    # twitter url
-    twitter = doc.css(".social-icon-container a")[0]['href'] #this will change if they're missing one!
-    linkedin = doc.css(".social-icon-container a")[1]['href']
-    github = doc.css(".social-icon-container a")[2]['href']
-    blog = doc.css(".social-icon-container a")[3]['href']
-    profile_quote = doc.css(".profile-quote").text
-    bio = doc.css("div.description-holder p").text
+    # twitter = doc.css(".social-icon-container a")[0]['href'] #this will change if they're missing one!
+    # linkedin = doc.css(".social-icon-container a")[1]['href']
+    # github = doc.css(".social-icon-container a")[2]['href']
+    # blog = doc.css(".social-icon-container a")[3]['href']
+    # profile_quote = doc.css(".profile-quote").text
+    # bio = doc.css("div.description-holder p").text
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
     clean_hash = student_hash.delete_if {|k, v| v == nil}
