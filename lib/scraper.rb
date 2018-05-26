@@ -54,7 +54,7 @@ class Scraper
 
       link_counter = 0
 
-      twitter = []
+      twitter = ""
 
       while link_counter < links_holder.length
         if assign[link_counter].include?("twitter")
