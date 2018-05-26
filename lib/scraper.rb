@@ -33,8 +33,6 @@ class Scraper
     end
 
     students
-    binding.pry
-
   end
 
   def self.scrape_profile_page(profile_url)
