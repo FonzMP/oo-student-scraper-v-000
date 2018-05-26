@@ -50,7 +50,6 @@ class Scraper
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}.delete_if {|k, v| v.nil? }
     student_hash
-    student_hash
   end
 
 end
