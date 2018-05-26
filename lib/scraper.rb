@@ -9,6 +9,7 @@ class Scraper
     holder = []
     holder_two = []
     holder_three = []
+    students = []
     doc.css(".student-name").collect do |item|
       holder << item.text
     end
