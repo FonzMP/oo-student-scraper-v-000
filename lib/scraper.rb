@@ -48,7 +48,7 @@ class Scraper
     profile_quote = doc.css(".profile-quote").text
     bio = doc.css("div.description-holder p").text
 
-    student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
+    student_hash = {:twitter => twitter if twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
   end
 
 end
