@@ -47,6 +47,7 @@ class Scraper
 
     # twitter url
     twitter = doc.css(".social-icon-container a")[0]['href']
+    linkedin = doc.css(".social-icon-container a")[1]['href']
 
     binding.pry
     #linkedin url
