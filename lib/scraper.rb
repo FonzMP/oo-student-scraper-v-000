@@ -46,7 +46,7 @@ class Scraper
     students = []
 
     # twitter url
-    doc.css(".student-name").collect do |item|
+    doc.css(".social-icon-container a").collect do |item|
       twitters << item.text
     end
 
