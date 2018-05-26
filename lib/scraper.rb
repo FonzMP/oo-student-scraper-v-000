@@ -50,7 +50,7 @@ class Scraper
       links_holder << link['href']
     end
 
-    links_holder.tap do |assign|
+    links_holder.map do |assign|
 
       if assign.include?("twitter")
         twitter = assign
