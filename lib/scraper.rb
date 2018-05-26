@@ -61,6 +61,7 @@ class Scraper
         twitter = nil
       end
       if ass.include?("linkedin")
+        linked_in = assign
     end
 
     student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
