@@ -54,39 +54,8 @@ class Scraper
     bio = doc.css("div.description-holder p").text
 
     binding.pry
-    #linkedin url
-    doc.css(".social-icon-container a").collect do |item|
-      linkedin = item['href'] if item['href'].include? ("linkedin")
-    end
-
-    #github url
-    doc.css("div.student-card a").collect do |item|
-      holder_three << item['href']
-    end
-
-    #blog url
-    doc.css("div.student-card a").collect do |item|
-      holder_three << item['href']
-    end
-
-    #profile quote
-    doc.css("div.student-card a").collect do |item|
-      holder_three << item['href']
-    end
-
-    #bio
-    doc.css("div.student-card a").collect do |item|
-      holder_three << item['href']
-    end
-
-    #create hash and push to array for return
-    counter = 0
-    while counter < holder.length
-      students << {:name => holder[counter], :location => holder_two[counter], :profile_url => holder_three[counter]}
-      counter += 1
-    end
-
-    students
+    
+    student_hash = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
   end
 
 end
