@@ -60,12 +60,13 @@ class Scraper
 
       if assign.include?("linkedin")
         linked_in = assign
+      elsif assign.include?("github")
+        github = assign
       else
         linked_in = nil
       end
 
-      if assign.include?("github")
-        github = assign
+
       else
         github = nil
       end
