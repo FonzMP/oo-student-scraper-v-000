@@ -54,11 +54,11 @@ class Scraper
 
       if assign.include?("twitter")
         twitter = assign
-      elif assign.include?("linkedin")
+      elsif assign.include?("linkedin")
         linked_in = assign
       elsif assign.include?("github")
         github = assign
-      elisif assign.include?("blog")
+      elsif assign.include?("blog")
         blog = assign
       end
 
